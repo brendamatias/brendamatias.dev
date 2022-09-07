@@ -1,3 +1,4 @@
+import SocialMedias from '../SocialMedias';
 import { Container } from './styles';
 
 const Intro = () => (
@@ -11,6 +12,8 @@ const Intro = () => (
         Resume
       </a>
     </div>
+
+    <SocialMedias />
   </Container>
 );
 

@@ -34,10 +34,6 @@ export const Container = styled.div`
 
   @media only screen and (max-width: ${({ theme }) => theme.width}) {
     height: 900px;
-
-    > div {
-      width: 100%;
-    }
   }
 
   @media only screen and (max-width: 900px) {
@@ -46,9 +42,5 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 600px) {
     background-size: 800px;
-
-    > div {
-      padding: 0 46px;
-    }
   }
 `;

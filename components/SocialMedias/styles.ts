@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 70px;
 
@@ -28,7 +28,7 @@ export const Container = styled.div`
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 660px) {
     left: 10px;
 
     > div {

@@ -67,13 +67,57 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  h2 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 50px;
+    max-width: 510px;
+    margin-bottom: 44px;
+    margin-top: 14px;
+
+    @media only screen and (max-width: 480px) {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+
+    &::before {
+      content: '';
+      width: 48px;
+      height: 4px;
+      background-color: #CC022A;
+      margin-right: 22px;
+    }
+  }
+
+  .wrapper {
+    background: linear-gradient(149.9deg, #090917 52.38%, #CC022A 187.98%);
+  }
+
   .container {
-    padding: 0 20px;
+    padding: 180px 20px;
     width: 1100px;
     margin: 0 auto;
 
-    @media only screen and (max-width: 480px) {
-      padding: 0 46px;
+    @media only screen and (max-width: 1100px) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: 120px 46px;
     }
   }
 `;
