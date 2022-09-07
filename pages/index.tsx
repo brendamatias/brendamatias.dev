@@ -1,14 +1,19 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Intro from '../components/Home';
+import Header from '../components/Header';
+import SocialMedias from '../components/SocialMedias';
 
 const Home: NextPage = () => (
   <>
     <Head>
-      <title>Create Next App</title>
+      <title>Brenda Matias - Portfolio</title>
     </Head>
 
     <main>
-      <h1>Hello World</h1>
+      <Header />
+      <Intro />
+      <SocialMedias />
     </main>
   </>
 );

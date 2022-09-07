@@ -23,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
 
   body, input, button {
     font: 14px 'Poppins', sans-serif;
+    color: #fff;
   }
 
   a {
@@ -36,19 +37,43 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-  button {
+  button, .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    padding: 14px 30px;
+    background: #CC022A;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border: 0;
   }
 
   img {
     -webkit-user-draggit: none
   }
 
-  main {
-    > .wrapper {
-      padding: 0 20px 56px 20px;
-      margin: 0 auto;
-      max-width: 935px;
+  h1 {
+    font-weight: 800;
+    font-size: 58px;
+    letter-spacing: -2px;
+
+    @media only screen and (max-width: 480px) {
+      font-size: 42px;
+    }
+  }
+
+  .container {
+    padding: 0 20px;
+    width: 1100px;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 480px) {
+      padding: 0 46px;
     }
   }
 `;

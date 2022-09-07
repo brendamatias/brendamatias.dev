@@ -1,0 +1,42 @@
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 70px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+    &::after {
+      display: block;
+      content: '';
+      background-color: ${({ theme }) => theme.white};
+      width: 1px;
+      height: 83px;
+    }
+
+    > a {
+      color: ${({ theme }) => theme.white};
+
+      > svg {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    left: 10px;
+
+    > div {
+      gap: 20px;
+
+      > a > svg {
+        font-size: 16px;
+      }
+    }
+  }
+`;
