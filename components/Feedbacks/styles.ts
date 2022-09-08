@@ -55,7 +55,6 @@ export const Container = styled.div`
               > strong {
                 display: block;
                 font-weight: 600;
-                font-size: 16px;
               }
 
               > span {

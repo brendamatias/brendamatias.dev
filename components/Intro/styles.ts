@@ -18,14 +18,12 @@ export const Container = styled.div`
       display: block;
       margin-bottom: 7px;
       font-weight: 400;
-      font-size: 16px;
     }
 
     > strong {
       display: block;
       margin-bottom: 60px;
       font-weight: 600;
-      font-size: 16px;
       letter-spacing: 3px;
       text-transform: uppercase;
       color: ${({ theme }) => theme.gray};

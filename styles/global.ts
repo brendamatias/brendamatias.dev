@@ -21,8 +21,8 @@ const GlobalStyle = createGlobalStyle`
     background-color: #FAFAFA;
   }
 
-  body, input, button, a {
-    font: 14px 'Poppins', sans-serif;
+  body, input, button {
+    font: 16px 'Poppins', sans-serif;
     color: #fff;
   }
 
@@ -30,7 +30,9 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     text-decoration: none;
-    gap: 16px
+    gap: 16px;
+    font-size: 14px;
+    color: #fff;
   }
 
   a > svg {

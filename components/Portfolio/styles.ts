@@ -46,10 +46,6 @@ export const Container = styled.div`
           font-size: 12px;
           color: ${({ theme }) => theme.gray};
         }
-
-        > strong {
-          font-size: 16px;
-        }
       }
     }
   }

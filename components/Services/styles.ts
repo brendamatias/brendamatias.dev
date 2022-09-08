@@ -37,10 +37,6 @@ export const Container = styled.div`
           margin-bottom: 10px;
         }
 
-        > strong {
-          font-size: 16px;
-        }
-
         > p {
           margin-top: 10px;
           font-size: 14px;
