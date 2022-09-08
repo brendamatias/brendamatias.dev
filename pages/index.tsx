@@ -4,6 +4,7 @@ import Intro from '../components/Intro';
 import Header from '../components/Header';
 import About from '../components/About';
 import Services from '../components/Services';
+import Contact from '../components/Contact';
 
 const Home: NextPage = () => (
   <>
@@ -18,6 +19,7 @@ const Home: NextPage = () => (
       <div className="wrapper">
         <About />
         <Services />
+        <Contact />
       </div>
     </main>
   </>
