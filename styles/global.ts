@@ -21,16 +21,21 @@ const GlobalStyle = createGlobalStyle`
     background-color: #FAFAFA;
   }
 
-  body, input, button {
+  body, input, button, a {
     font: 14px 'Poppins', sans-serif;
     color: #fff;
   }
 
   a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: rgb(0, 55, 107);
-    font-size: 16px;
-    font-weight: 600;
+    gap: 16px
+  }
+
+  a > svg {
+    color: #CC022A;
+    font-size: 20px;
   }
 
   ul {
@@ -82,7 +87,7 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 25px;
   }
 
   .title {

@@ -1,12 +1,19 @@
-import type { NextPage } from 'next';
+import type { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Intro from '../components/Intro';
 import Header from '../components/Header';
 import About from '../components/About';
 import Services from '../components/Services';
 import Contact from '../components/Contact';
+import Experience from '../components/Experience';
+import { getPrismicClient } from '../services/prismic';
+import { IExperience } from '../types';
 
-const Home: NextPage = () => (
+interface HomeProps {
+  experiences: IExperience[];
+}
+
+const Home = ({ experiences }: HomeProps) => (
   <>
     <Head>
       <title>Brenda Matias - Portfolio</title>
@@ -20,9 +27,39 @@ const Home: NextPage = () => (
         <About />
         <Services />
         <Contact />
+        <Experience experiences={experiences} />
       </div>
     </main>
   </>
 );
 
 export default Home;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const client = getPrismicClient();
+
+  const response = await client.getAllByType('experience', {
+    orderings: [
+      {
+        field: 'my.experience.started_in',
+        direction: 'desc',
+      },
+    ],
+  });
+
+  const experiences = response.map(({ uid, data }) => ({
+    slug: uid,
+    job: data.job[0].text,
+    company: data.company[0].text,
+    description: data.description[0].text,
+    started_in: data.started_in,
+    finished_in: data.finished_in,
+  }));
+
+  return {
+    props: {
+      experiences,
+    },
+    revalidate: 86400,
+  };
+};
