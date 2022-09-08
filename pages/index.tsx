@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Intro from '../components/Intro';
 import Header from '../components/Header';
 import About from '../components/About';
+import Services from '../components/Services';
 
 const Home: NextPage = () => (
   <>
@@ -15,9 +16,8 @@ const Home: NextPage = () => (
       <Intro />
 
       <div className="wrapper">
-        <div className="container">
-          <About />
-        </div>
+        <About />
+        <Services />
       </div>
     </main>
   </>

@@ -107,7 +107,7 @@ const GlobalStyle = createGlobalStyle`
     background: linear-gradient(149.9deg, #090917 52.38%, #CC022A 187.98%);
   }
 
-  .container {
+  .container , .wrapper > div {
     padding: 180px 20px;
     width: 1100px;
     margin: 0 auto;

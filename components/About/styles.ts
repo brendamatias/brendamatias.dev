@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
   gap: 40px;
   justify-content: space-between;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
 
   > div {
     > p {
