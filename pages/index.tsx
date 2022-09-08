@@ -7,6 +7,7 @@ import Services from '../components/Services';
 import Contact from '../components/Contact';
 import Experience from '../components/Experience';
 import Portfolio from '../components/Portfolio';
+import Feedbacks from '../components/Feedbacks';
 
 import { getPrismicClient } from '../services/prismic';
 import { IExperience } from '../types';
@@ -31,6 +32,7 @@ const Home = ({ experiences }: HomeProps) => (
         <Contact />
         <Experience experiences={experiences} />
         <Portfolio />
+        <Feedbacks />
       </div>
     </main>
   </>

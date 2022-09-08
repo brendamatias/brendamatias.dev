@@ -19,12 +19,8 @@ export const Container = styled.div`
       height: 83px;
     }
 
-    > a {
+    > a > svg {
       color: ${({ theme }) => theme.white};
-
-      > svg {
-        font-size: 22px;
-      }
     }
   }
 

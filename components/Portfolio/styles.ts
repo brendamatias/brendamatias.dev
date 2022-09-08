@@ -5,8 +5,9 @@ export const Container = styled.div`
 
   > div {
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
 
     > a {
       margin-bottom: 44px;
