@@ -1,4 +1,4 @@
-import { MdCalendarToday, MdKeyboardArrowRight, MdMessage, MdStar } from 'react-icons/md';
+import { MdCalendarToday, MdKeyboardArrowRight, MdMessage } from 'react-icons/md';
 import { Container } from './styles';
 
 const Blog = () => (

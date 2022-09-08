@@ -8,10 +8,11 @@ import Contact from '../components/Contact';
 import Experience from '../components/Experience';
 import Portfolio from '../components/Portfolio';
 import Feedbacks from '../components/Feedbacks';
+import Blog from '../components/Blog';
+import Footer from '../components/Footer';
 
 import { getPrismicClient } from '../services/prismic';
 import { IExperience } from '../types';
-import Blog from '../components/Blog';
 
 interface HomeProps {
   experiences: IExperience[];
@@ -35,6 +36,7 @@ const Home = ({ experiences }: HomeProps) => (
         <Portfolio />
         <Feedbacks />
         <Blog />
+        <Footer />
       </div>
     </main>
   </>

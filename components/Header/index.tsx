@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FaBars } from 'react-icons/fa';
 import { Container } from './styles';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo-icon.svg';
 
 const Header = () => (
   <Container>

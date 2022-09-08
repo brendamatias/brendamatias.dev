@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-
   > div {
     display: flex;
     justify-content: space-between;
