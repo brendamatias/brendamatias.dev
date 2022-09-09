@@ -21,14 +21,27 @@ export const Container = styled.div`
     gap: 40px;
 
     > li {
-      background-image: url('project.jpg');
       height: 188px;
       width: 320px;
       position: relative;
       filter: drop-shadow(0px 4px 57px rgba(255, 255, 255, 0.04));
-      border-radius: 4px;
 
-      > div {
+      .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+
+        img {
+          border-radius: 4px;
+        }
+      }
+
+      > .info {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;

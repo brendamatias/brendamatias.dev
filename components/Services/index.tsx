@@ -24,7 +24,7 @@ const Services = () => {
   return (
     <Container>
       <span className="title">Services</span>
-      <h2>How can I help your business</h2>
+      <h2>What I usually work with</h2>
 
       <ul>
         {services.map((service, index) => (
