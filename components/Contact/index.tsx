@@ -9,7 +9,7 @@ const Contact = () => {
       <strong>{t('contact_title')}</strong>
       <p>{t('contact_subtitle')}</p>
 
-      <a href="#" className="button">
+      <a href="mailto:brendamatias.sobral@gmail.com" className="button">
         {t('contact')}
       </a>
     </Container>

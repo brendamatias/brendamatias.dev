@@ -10,7 +10,7 @@ const Footer = () => {
     <Container>
       <Image src={logo} alt="Brenda Matias Logo" />
       <p>
-        {t('footer_text')} <a href="#">email</a>.
+        {t('footer_text')} <a href="mailto:brendamatias.sobral@gmail.com">email</a>.
       </p>
 
       <span>{t('footer_made_with')}</span>

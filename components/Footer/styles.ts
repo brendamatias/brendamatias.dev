@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 export const Container = styled.footer`
   display: flex;
@@ -17,9 +18,13 @@ export const Container = styled.footer`
 
     > a {
       display: inline-block;
-      color: ${({ theme }) => theme.primary};
+      color: ${({ theme }) => darken(0.1, theme.primary)};
       font-weight: 600;
       font-size: 18px;
+
+      &:hover {
+        color: ${({ theme }) => theme.primary};
+      }
     }
   }
 

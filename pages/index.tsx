@@ -21,7 +21,7 @@ interface HomeProps {
 const Home = ({ experiences }: HomeProps) => (
   <>
     <Head>
-      <title>Brenda Matias - Portfolio</title>
+      <title>Brenda Matias</title>
     </Head>
     <main>
       <Header />

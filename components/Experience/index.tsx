@@ -18,7 +18,7 @@ const Experience = ({ experiences }: ExperienceProps) => {
       <div>
         <h2>{t('experience_subtitle')}</h2>
 
-        <a href="#">
+        <a href="/resume.pdf" target="_blank">
           {t('see_curriculum')} <MdKeyboardArrowRight />
         </a>
       </div>

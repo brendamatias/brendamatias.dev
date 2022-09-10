@@ -17,7 +17,7 @@ const Intro = () => {
         <h1>Brenda Matias</h1>
         <strong>{t('web_developer')}</strong>
 
-        <a href="#" className="button">
+        <a href="/resume.pdf" className="button" target="_blank">
           <span>{t('resume')}</span>
         </a>
       </div>
