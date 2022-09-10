@@ -13,6 +13,10 @@ const GlobalStyle = createGlobalStyle`
     outline: 0;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   html, body, #root {
     height: 100%;
   }
@@ -55,7 +59,13 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-  button, .button {
+  button {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .button {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -6,7 +6,7 @@ const Feedbacks = () => {
   const { t } = useTranslation();
 
   return (
-    <Container>
+    <Container id="feedbacks">
       <span className="title">{t('feedbacks_title')}</span>
 
       <div>

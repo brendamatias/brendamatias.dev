@@ -18,15 +18,50 @@ export const Container = styled.header`
       align-items: center;
       gap: 60px;
 
-      > button {
-        background-color: transparent;
-        padding: 0;
+      > .nav {
+        position: relative;
 
-        > svg {
-          font-size: 22px;
+        > button {
+          background-color: transparent;
+          padding: 0;
+
+          > svg {
+            font-size: 22px;
+          }
+        }
+
+        > ul {
+          position: absolute;
+          background-color: ${({ theme }) => theme.white};
+          top: 35px;
+          width: 200px;
+          right: 0;
+          display: none;
+          flex-direction: column;
+          border-radius: 4px;
+          overflow: hidden;
+
+          &.visible {
+            display: flex;
+          }
+
+          > li {
+            > button {
+              color: ${({ theme }) => theme.secondary};
+              padding: 15px 20px;
+              width: 100%;
+              text-align: left;
+
+              &:hover {
+                color: ${({ theme }) => theme.white};
+                background-color: ${({ theme }) => theme.primary};
+              }
+            }
+          }
         }
       }
     }
+
     @media only screen and (max-width: ${({ theme }) => theme.width}) {
       width: 100%;
     }

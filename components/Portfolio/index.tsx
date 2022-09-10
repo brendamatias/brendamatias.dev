@@ -8,7 +8,7 @@ const Portfolio = () => {
   const { t } = useTranslation();
 
   return (
-    <Container>
+    <Container id="portfolio">
       <span className="title">{t('portfolio_title')}</span>
 
       <div>

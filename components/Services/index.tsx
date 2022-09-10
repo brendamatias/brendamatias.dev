@@ -24,7 +24,7 @@ const Services = () => {
   ];
 
   return (
-    <Container>
+    <Container id="services">
       <span className="title">{t('services_title')}</span>
       <h2>{t('services_subtitle')}</h2>
 
