@@ -5,10 +5,13 @@ export const Container = styled.div`
   align-items: center;
   height: 100vh;
   background-color: ${({ theme }) => theme.secondary};
-  background-image: url('/background.png');
-  background-position: bottom -144px right -190px;
-  background-repeat: no-repeat;
   position: relative;
+
+  > .image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 
   > div {
     display: flex;

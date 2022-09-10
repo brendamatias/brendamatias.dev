@@ -12,9 +12,10 @@ export const Container = styled.div`
     padding: 0;
     text-transform: none;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.6);
 
-    &:hover {
+    &:hover,
+    &.active {
       color: rgba(255, 255, 255, 1);
     }
   }
