@@ -12,13 +12,14 @@ import Feedbacks from '../components/Feedbacks';
 import Blog from '../components/Blog';
 import Footer from '../components/Footer';
 import { getPrismicClient } from '../services/prismic';
-import { IExperience } from '../types';
+import { IExperience, IProject } from '../types';
 
 interface HomeProps {
   experiences: IExperience[];
+  projects: IProject[];
 }
 
-const Home = ({ experiences }: HomeProps) => (
+const Home = ({ experiences, projects }: HomeProps) => (
   <>
     <Head>
       <title>Brenda Matias</title>
@@ -31,7 +32,7 @@ const Home = ({ experiences }: HomeProps) => (
         <Services />
         <Contact />
         <Experience experiences={experiences} />
-        <Portfolio />
+        <Portfolio projects={projects} />
         <Feedbacks />
         <Blog />
         <Footer />
@@ -45,7 +46,7 @@ export default Home;
 export const getStaticProps: GetStaticProps = async () => {
   const client = getPrismicClient();
 
-  const response = await client.getAllByType('experience', {
+  const responseExperience = await client.getAllByType('experience', {
     orderings: [
       {
         field: 'my.experience.started_in',
@@ -54,7 +55,9 @@ export const getStaticProps: GetStaticProps = async () => {
     ],
   });
 
-  const experiences = response.map(({ uid, data }) => ({
+  const responseProjects = await client.getAllByType('project');
+
+  const experiences = responseExperience.map(({ uid, data }) => ({
     slug: uid,
     job: data.job[0].text,
     company: data.company[0].text,
@@ -63,9 +66,18 @@ export const getStaticProps: GetStaticProps = async () => {
     finished_in: data.finished_in,
   }));
 
+  const projects = responseProjects.map(({ uid, data }) => ({
+    slug: uid,
+    image: data.image,
+    title: data.title[0].text,
+    link: data.link.url,
+    technologies: data.technologies?.map((item: any) => item.technology[0]?.text),
+  }));
+
   return {
     props: {
       experiences,
+      projects,
     },
     revalidate: 86400,
   };

@@ -1,11 +1,15 @@
-import Image from 'next/image';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import { Container } from './styles';
-import projectImage from '../../assets/project.jpg';
+import { IProject } from '../../types';
+import ListProjects from '../ListProjects';
 
-const Portfolio = () => {
+interface PortfolioProps {
+  projects: IProject[];
+}
+
+const Portfolio = ({ projects }: PortfolioProps) => {
   const { t } = useTranslation();
 
   return (
@@ -22,19 +26,7 @@ const Portfolio = () => {
         </Link>
       </div>
 
-      <ul>
-        {[1, 2, 3, 4, 5, 6].map((project) => (
-          <li key={project}>
-            <div className="image">
-              <Image src={projectImage} alt={`Project 0${project}`} />
-            </div>
-            <div className="info">
-              <strong>Brenda Matias Portfolio</strong>
-              <span>HTML - CSS - NextJS</span>
-            </div>
-          </li>
-        ))}
-      </ul>
+      <ListProjects projects={projects.slice(0, 6)} />
     </Container>
   );
 };
