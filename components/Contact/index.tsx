@@ -1,17 +1,19 @@
+import { useTranslation } from 'react-i18next';
 import { Container } from './styles';
 
-const Contact = () => (
-  <Container>
-    <strong>Let&apos;s talk?</strong>
-    <p>
-      Do you want to know more about me or talk about a potential project? Send me an email, even if it&apos;s just to
-      say hi!
-    </p>
+const Contact = () => {
+  const { t } = useTranslation();
 
-    <a href="#" className="button">
-      Contact
-    </a>
-  </Container>
-);
+  return (
+    <Container>
+      <strong>{t('contact_title')}</strong>
+      <p>{t('contact_subtitle')}</p>
+
+      <a href="#" className="button">
+        {t('contact')}
+      </a>
+    </Container>
+  );
+};
 
 export default Contact;

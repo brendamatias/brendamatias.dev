@@ -1,20 +1,25 @@
+import { useTranslation } from 'react-i18next';
 import SocialMedias from '../SocialMedias';
 import { Container } from './styles';
 
-const Intro = () => (
-  <Container>
-    <div className="container">
-      <span>Hello, my name is</span>
-      <h1>Brenda Matias</h1>
-      <strong>Web Development</strong>
+const Intro = () => {
+  const { t } = useTranslation();
 
-      <a href="#" className="button">
-        Resume
-      </a>
-    </div>
+  return (
+    <Container>
+      <div className="container">
+        <span>{t('welcome_msg')}</span>
+        <h1>Brenda Matias</h1>
+        <strong>{t('web_developer')}</strong>
 
-    <SocialMedias />
-  </Container>
-);
+        <a href="#" className="button">
+          <span>{t('resume')}</span>
+        </a>
+      </div>
+
+      <SocialMedias />
+    </Container>
+  );
+};
 
 export default Intro;

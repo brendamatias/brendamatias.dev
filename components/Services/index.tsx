@@ -1,8 +1,10 @@
 import { MdDesignServices, MdQueryStats } from 'react-icons/md';
 import { GoBrowser } from 'react-icons/go';
+import { useTranslation } from 'react-i18next';
 import { Container } from './styles';
 
 const Services = () => {
+  const { t } = useTranslation();
   const services = [
     {
       label: 'Web Development',
@@ -23,8 +25,8 @@ const Services = () => {
 
   return (
     <Container>
-      <span className="title">Services</span>
-      <h2>What I usually work with</h2>
+      <span className="title">{t('services_title')}</span>
+      <h2>{t('services_subtitle')}</h2>
 
       <ul>
         {services.map((service, index) => (

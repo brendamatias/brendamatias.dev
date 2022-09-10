@@ -8,6 +8,7 @@ export const Container = styled.div`
   background-image: url('/background.png');
   background-position: bottom -144px right -190px;
   background-repeat: no-repeat;
+  position: relative;
 
   > div {
     display: flex;

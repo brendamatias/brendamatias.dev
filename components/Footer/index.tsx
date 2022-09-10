@@ -1,16 +1,21 @@
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 import { Container } from './styles';
 import logo from '../../assets/logo.svg';
 
-const Footer = () => (
-  <Container>
-    <Image src={logo} alt="Brenda Matias Logo" />
-    <p>
-      How about starting a project together? Send me an <a href="#">email</a>.
-    </p>
+const Footer = () => {
+  const { t } = useTranslation();
 
-    <span>Made with ❤️ and lots of ☕ from 2022 ©</span>
-  </Container>
-);
+  return (
+    <Container>
+      <Image src={logo} alt="Brenda Matias Logo" />
+      <p>
+        {t('footer_text')} <a href="#">email</a>.
+      </p>
+
+      <span>{t('footer_made_with')}</span>
+    </Container>
+  );
+};
 
 export default Footer;

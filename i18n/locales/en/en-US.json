@@ -1,0 +1,29 @@
+{
+  "translation": {
+    "welcome_msg":"Hello, my name is",
+    "web_developer":"web developer",
+    "resume": "resume",
+    "view_more": "View more",
+    "about_title":"About",
+    "about_subtitle":"A computer engineer who loves to code",
+    "about_me": "I am a Front-End lover, where I always seek to learn and enhance my skills in this development modality, also proficient on projects that requires skills on Back-End development modalities.",
+    "about_projects_done": "Projects Done",
+    "about_happy_clients": "Happy Clients",
+    "services_title":"Services",
+    "services_subtitle":"What I usually work with",
+    "contact_title":"Let's talk?",
+    "contact_subtitle":"Do you want to know more about me or talk about a potential project? Send me an email, even if it's just to say hi!",
+    "contact": "Contact",
+    "experience_title":"Experience",
+    "experience_subtitle":"My professional journey",
+    "see_curriculum": "See curriculum",
+    "portfolio_title":"Portfolio",
+    "portfolio_subtitle":"Latests projects delivered",
+    "feedbacks_title":"Feedbacks",
+    "feedbacks_subtitle":"What people say about me",
+    "blog_title":"Blog",
+    "blog_subtitle":"Latest articles published",
+    "footer_text": "How about starting a project together? Send me an",
+    "footer_made_with": "Made with ❤️ and lots of ☕ in 2022 ©"
+  }
+}

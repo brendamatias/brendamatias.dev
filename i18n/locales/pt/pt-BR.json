@@ -1,0 +1,29 @@
+{
+  "translation": {
+    "welcome_msg":"Olá, meu nome é",
+    "web_developer":"desenvolvedora web",
+    "resume": "currículo",
+    "view_more": "Ver mais",
+    "about_title":"Sobre",
+    "about_subtitle":"Uma engenheira da computação apaixonada por codificar",
+    "about_me": "I am a Front-End lover, where I always seek to learn and enhance my skills in this development modality, also proficient on projects that requires skills on Back-End development modalities.",
+    "about_projects_done": "Projetos Finalizados",
+    "about_happy_clients": "Clientes Felizes",
+    "services_title":"Serviços",
+    "services_subtitle":"What I usually work with",
+    "contact_title":"Vamos conversar?",
+    "contact_subtitle":"Quer saber mais sobre mim ou falar sobre um projeto em potencial? Envie-me um e-mail, mesmo que seja apenas para dizer oi!",
+    "contact": "Contato",
+    "experience_title":"Experiência",
+    "experience_subtitle":"Minha jornada profissional",
+    "see_curriculum": "Ver currículo",
+    "portfolio_title":"Portfólio",
+    "portfolio_subtitle":"Últimos projetos entregues",
+    "feedbacks_title":"Feedbacks",
+    "feedbacks_subtitle":"O que as pessoas dizem sobre mim",
+    "blog_title":"Blog",
+    "blog_subtitle":"Últimos artigos publicados",
+    "footer_text": "Que tal começarmos um projeto juntos? Envie-me um",
+    "footer_made_with": "Feito com ❤️ e muito ☕ em 2022 ©"
+  }
+}
