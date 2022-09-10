@@ -70,7 +70,7 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: -2px;
 
     @media only screen and (max-width: 480px) {
-      font-size: 42px;
+      font-size: 40px;
     }
   }
 

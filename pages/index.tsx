@@ -11,7 +11,6 @@ import Portfolio from '../components/Portfolio';
 import Feedbacks from '../components/Feedbacks';
 import Blog from '../components/Blog';
 import Footer from '../components/Footer';
-
 import { getPrismicClient } from '../services/prismic';
 import { IExperience } from '../types';
 
