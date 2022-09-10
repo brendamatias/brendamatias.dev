@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { FaBars } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { Container } from './styles';
 import logo from '../../assets/logo-icon.svg';
 import Languages from '../Languages';
@@ -21,7 +22,9 @@ const Header = () => {
   return (
     <Container className={`${scrollPosition > 100 && 'header-scroll'}`}>
       <div className="container">
-        <Image src={logo} alt="Brenda Matias Logo" />
+        <Link href="/">
+          <Image src={logo} alt="Brenda Matias Logo" style={{ cursor: 'pointer' }} />
+        </Link>
 
         <div>
           <Languages />

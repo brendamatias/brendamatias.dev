@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 export const Container = styled.div`
   position: absolute;
@@ -21,6 +22,10 @@ export const Container = styled.div`
 
     > a > svg {
       color: ${({ theme }) => theme.white};
+
+      &:hover {
+        color: ${darken(0.1, '#CC022A')};
+      }
     }
   }
 

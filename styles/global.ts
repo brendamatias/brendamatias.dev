@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { darken } from 'polished';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -33,11 +34,21 @@ const GlobalStyle = createGlobalStyle`
     gap: 16px;
     font-size: 14px;
     color: #fff;
+    transition: all 0.2s;
+
+    &:hover {
+      color: ${darken(0.1, '#fff')};
+
+      > svg {
+        color: ${darken(0.1, '#CC022A')};
+      }
+    }
   }
 
   a > svg {
     color: #CC022A;
     font-size: 20px;
+    transition: all 0.2s;
   }
 
   ul {
@@ -58,6 +69,11 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     letter-spacing: 2px;
     border: 0;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: ${darken(0.1, '#CC022A')};
+    }
   }
 
   img {

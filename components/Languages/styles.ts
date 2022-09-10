@@ -17,6 +17,7 @@ export const Container = styled.div`
     &:hover,
     &.active {
       color: rgba(255, 255, 255, 1);
+      background-color: transparent;
     }
   }
 `;
